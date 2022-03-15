@@ -1,0 +1,193 @@
+/* Color Variables */
+:root {
+  --main-bg-color: #231F20;
+  --light: #F3DFA2;
+  --red: #D64550;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Sets page and wrapper height to 100% */
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sets body font style and background color */
+body {
+  font-family: 'Questrial', sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+h1 {
+  padding: 10px 10px 15px 0;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+/* Wrapper sizing */
+.wrapper {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* header styling */
+header {
+  text-align: right;
+  color: var(--light);
+}
+
+p {
+  text-align: center;
+}
+
+/* card styling */
+.card {
+  background-color: var(--main-bg-color);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(255, 239, 169, .4) 0px 0px 9px 3px;
+  color: var(--light);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+}
+
+/* line after card-header */
+.card-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: var(--red);
+  height: 2px;
+}
+
+/* card body height */
+.card-body {
+  min-height: 100px;
+}
+
+/* align card footer text center */
+.card-footer {
+  text-align: center;
+}
+
+/* line before card footer */
+.card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: var(--red);
+  height: 2px;
+}
+
+.card-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* button styling */
+.btn {
+  border: none;
+  background-color: hsl(360, 91%, 36%);
+  border-radius: 25px;
+  width: 30%;
+  box-shadow: 0px 1px 6px 8px rgba(0, 0, 0, 0.5)
+    0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
+}
+
+.float-right {
+  float: right;
+}
+
+/* input display styling */
+#password {
+  background-color: var(--main-bg-color);
+  color: var(--light);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed var(--light);
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+}
+
+/* refresh button styling */
+#refresh {
+    background-color: gray;
+}
+
+/* Media Query styling */
+@media (max-width: 1000px) {
+  h1 {
+    color: var(--light);
+  }
+}
+
+@media (max-width: 840px) {
+  h1 {
+    color: var(--red);
+  }
+}
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    text-align: center;
+    color: var(--red);
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .now {
+    color: var(--light);
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+}
+
