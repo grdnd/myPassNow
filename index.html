@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Password Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <span class="pass">Pass</span><span class="now">Now</span>
+    </h1>
+    <p>Failed security is in the past!</p>
+  </header>
+    <!-- Container for application -->
+  <div class="wrapper">
+    <!-- Password Generator Container -->
+    <div class="card">
+      <div class="card-header">
+        <h2>Generate your own password now!</h2>
+      </div>
+      <div class="card-body">
+        <!-- Dotted textbox -->
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+      </div>
+      <!-- Card Footer Contains Buttons -->
+      <div class="card-footer">
+        <!-- Generate Password Button -->
+        <button id="start" class="btn">Start</button>
+        <!-- Refresh Button -->
+        <button id="refresh" class="btn" onClick="window.location.reload();">Refresh</button>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
