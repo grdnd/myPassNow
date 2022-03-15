@@ -3,6 +3,7 @@
   --main-bg-color: #231F20;
   --light: #F3DFA2;
   --red: #D64550;
+  --blue: #A3C3D9;
 }
 
 * {
@@ -38,12 +39,17 @@ h1 {
 
 /* header styling */
 header {
+  margin-top: -20px;
   text-align: right;
   color: var(--light);
 }
 
 p {
   text-align: center;
+}
+
+.pass {
+  color: var(--blue);
 }
 
 /* card styling */
