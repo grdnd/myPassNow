@@ -32,9 +32,7 @@ h1 {
 
 /* Wrapper sizing */
 .wrapper {
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 20px 0px 20px;
 }
 
 /* header styling */
@@ -111,7 +109,7 @@ p {
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
-  margin: 16px 16px 16px 20px;
+  margin: 40px 16px 16px 20px;
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
@@ -171,7 +169,7 @@ button[disabled] {
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
-    margin: 16px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
     padding: 10px 15px;
   }
 
