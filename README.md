@@ -24,7 +24,9 @@ On startup the user is presented with the password generator interface. When the
 
 
 ## 🤝 Contributions
-GitHub Repo: https://github.com/grdnd/myPassNow 📦
+If you would like to make a contribution, the application repository can be reached at:
+<br>
+https://github.com/grdnd/myPassNow 📦
 
 ## Questions 🤷‍♂️
 For inquiries, please feel free to contact me at:
